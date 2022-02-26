@@ -1,8 +1,8 @@
-package project;
+package varibles;
 
 import java.util.Scanner;
 
-public class Max {
+public class Varible {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter num1: ");
@@ -16,20 +16,20 @@ public class Max {
             max = num1;
             middle = num2;
         } else {
-            max = num2; //15
-            middle = num1; //5
+            max = num2;
+            middle = num1;
         }
-            //10   15
         if (num3 > max) {
             min = middle;
             middle = max;
             max = num3;
         }
-//        else{min = middle; middle = num3;}
+
         else if (num3 > middle) {
             min = middle;
             middle = num3;
         } else min = num3;
-            System.out.println( max + ", "+ middle +", " + min);
+        System.out.println("3ta o'zgaruvchining kamayish tartibi:  " + max + ", "+ middle +", " + min);
+        System.out.println("3ta o'zgaruvchining o'sish tartibi:  " + min + ", "+ middle +", " + max);
     }
 }
